@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackVector | Full Stack Developer Portfolio</title>
+    <!-- Google Font (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar Logo Image -->
+            <div class="logo">
+                <a href="#home" class="logo-link">
+                    <img src="images/logo.png" alt="StackVector Logo" class="nav-logo-img">
+                </a>
+            </div>
+    
+    <!-- Cool Preloader Intro Screen -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="images/logo.png" alt="StackVector Logo" class="preloader-logo">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+    
+    <!-- Custom Glowing Neon Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Stack<span>Vector</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- Inga span tag add pannirukkom 👇 -->
+            <h1>Hi, I'm a <span id="typing-text" class="highlight"></span><span class="cursor">|</span></h1>
+            <p>Building high-performance web applications, modern UI/UX, and robust backend systems under <strong>StackVector</strong>.</p>
+            <div class="hero-buttons">
+                <a href="#skills" class="btn primary-btn">View Skills</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section reveal">
+        <div class="skills-container">
+            <h2>Technical <span class="highlight">Skills</span></h2>
+            <p class="skills-subtitle">Technologies and tools I use to build scalable web applications</p>
+            
+            <div class="skills-grid">
+                <!-- Skill Card 1: Frontend -->
+                <div class="skill-card reveal">
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3, JavaScript (ES6+), React.js</p>
+                </div>
+
+                <!-- Skill Card 2: Backend -->
+                <div class="skill-card reveal">
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Express.js</p>
+                </div>
+
+                <!-- Skill Card 3: Database -->
+                <div class="skill-card reveal">
+                    <h3>Database & Storage</h3>
+                    <p>MongoDB, Mongoose ODM</p>
+                </div>
+
+                <!-- Skill Card 4: Tools & Others -->
+                <div class="skill-card">
+                    <h3>Tools & Professional</h3>
+                    <p>Git, GitHub, VS Code, Senior-level Typing (Tamil & English)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section reveal">
+        <div class="contact-container">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+            <p class="contact-subtitle">Have a project in mind or want to collaborate? Drop a message!</p>
+            
+            <div class="contact-box">
+                <!-- Contact Info (Location ane Email remove kari didha chhe) -->
+                <div class="contact-info">
+                    <h3>Let's talk about everything!</h3>
+                    <p>Feel free to reach out for web development projects, full-stack queries, or tech discussions.</p>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form">
+                    <div class="input-group">
+                        <input type="text" id="wa-name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="wa-email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="wa-message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="button" onclick="sendToWhatsApp()" class="btn primary-btn">Send via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Neon Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Interactive Tech Network Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Glowing Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">Stack<span>Vector</span></div>
+            <p class="footer-text">Building scalable web applications & digital experiences.</p>
+            
+            <!-- 3D Glowing Social Links (Twitter & Instagram mattum) -->
+            <div class="social-links">
+                <a href="https://x.com/StackVector123" target="_blank" class="social-btn">Twitter</a>
+                <a href="https://www.instagram.com/stackvector?exln=d2h3NnJzbTdxZXBj" target="_blank" class="social-btn">Instagram</a>
+            </div>
+            
+            <p class="copyright">© 2026 StackVector. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating 3D Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" title="Go to top">⬆️</button>
+
+   
+
+
+    <!-- EmailJS SDK CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
